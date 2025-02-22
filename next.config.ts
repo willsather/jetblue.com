@@ -17,4 +17,5 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+const withVercelToolbar = require("@vercel/toolbar/plugins/next")();
+export default withVercelToolbar(nextConfig);

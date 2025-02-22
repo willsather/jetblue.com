@@ -1,10 +1,13 @@
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { VercelToolbar } from "@vercel/toolbar/next";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 
 import "./globals.css";
-import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: {
@@ -56,6 +59,13 @@ export default function RootLayout({
         {children}
 
         <Footer />
+
+        {/*DEMO: Vercel Analytics/Speed Insights SDK Packages for reporting*/}
+        <Analytics />
+        <SpeedInsights />
+
+        {/*DEMO: Vercel Toolbar */}
+        {process.env.NODE_ENV === "development" && <VercelToolbar />}
       </body>
     </html>
   );

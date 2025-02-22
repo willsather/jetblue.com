@@ -1,6 +1,7 @@
 import BookHero from "@/app/(home)/book-hero";
 import CreditCardPromo from "@/app/(home)/credit-card-promo";
 import PartnersSection from "@/app/(home)/partners-section";
+import VacationSection from "@/app/(home)/vacation-section";
 
 export default function Home() {
   return (
@@ -9,6 +10,8 @@ export default function Home() {
         <BookHero />
 
         <CreditCardPromo />
+
+        <VacationSection />
 
         <PartnersSection />
       </main>
