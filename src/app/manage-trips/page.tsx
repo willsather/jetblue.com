@@ -1,10 +1,10 @@
+import Link from "next/link";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { ChevronRight } from "lucide-react";
-import Link from "next/link";
 
-export default function CheckInPage() {
+export default function ManageTripsPage() {
   return (
     <div className="flex min-h-screen flex-col">
       {/* Breadcrumb */}
@@ -15,24 +15,23 @@ export default function CheckInPage() {
               Home
             </Link>
             <span className="text-gray-300">{"/"}</span>
-            <span className="text-gray-600">Check In</span>
+            <span className="text-gray-600">Manage Trips</span>
           </div>
 
-          <h1 className="mb-12 font-bold">Check in</h1>
+          <h1 className="mb-12 font-bold">Manage trips</h1>
         </div>
       </nav>
 
       <main className="container mx-auto flex-1 px-4">
-        <div className="mx-auto max-w-xl py-8">
-          <div className="space-y-4">
-            <h2 className="font-bold">Find your itinerary</h2>
-            <div>
-              <p className="text-gray-600">
-                Check in within 24 hours of your flight.
-              </p>
+        <div className="mx-auto max-w-2xl py-8">
+          <div className="space-y-8">
+            <h2 className="mb-2 font-bold">
+              Change or cancel flights, add bags, & more
+            </h2>
 
-              <hr className="my-8 w-full bg-gray-300" />
+            <hr className="my-16 w-full bg-gray-300" />
 
+            <div className="max-w-md">
               <form className="space-y-6">
                 <div className="space-y-2">
                   <Label htmlFor="lastName">Last name</Label>
@@ -66,17 +65,6 @@ export default function CheckInPage() {
                   Continue
                 </Button>
               </form>
-            </div>
-
-            <div className="space-y-2">
-              <h3 className="font-medium">Need help?</h3>
-              <Link
-                href="/find-confirmation"
-                className="inline-flex items-center text-jb-blue hover:underline"
-              >
-                Find your confirmation code
-                <ChevronRight className="ml-1 h-4 w-4" />
-              </Link>
             </div>
           </div>
         </div>
