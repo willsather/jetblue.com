@@ -1,8 +1,20 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+
+export const metadata: Metadata = {
+  title: "Manage Trips",
+  description:
+    "Skip the (phone) line. It’s fast and easy to change, cancel and manage your JetBlue flights on jetblue.com. Select seats, add extras, check in and more.",
+  openGraph: {
+    title: "Manage Trips",
+    description:
+      "Skip the (phone) line. It’s fast and easy to change, cancel and manage your JetBlue flights on jetblue.com. Select seats, add extras, check in and more.",
+  },
+};
 
 export default function ManageTripsPage() {
   return (

@@ -1,6 +1,19 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+
 import TrendingDestinations from "@/app/flights/trending-destinations";
 import BookFlight from "@/components/book-flight";
-import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Flights",
+  description:
+    "Ready, jet, GO! Find JetBlue flights, airfare deals and TrueBlue award travel to 100+ destinations in the U.S., Latin America, the Caribbean—and London.",
+  openGraph: {
+    title: "Flights",
+    description:
+      "Ready, jet, GO! Find JetBlue flights, airfare deals and TrueBlue award travel to 100+ destinations in the U.S., Latin America, the Caribbean—and London.",
+  },
+};
 
 export default function FlightsPage() {
   return (

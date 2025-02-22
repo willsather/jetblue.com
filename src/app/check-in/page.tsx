@@ -1,8 +1,21 @@
+import { ChevronRight } from "lucide-react";
+import type { Metadata } from "next";
+import Link from "next/link";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { ChevronRight } from "lucide-react";
-import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Check In",
+  description:
+    "Skip the (phone) line. It’s fast and easy to change, cancel and manage your JetBlue flights on jetblue.com. Select seats, add extras, check in and more.",
+  openGraph: {
+    title: "Check In",
+    description:
+      "Skip the (phone) line. It’s fast and easy to change, cancel and manage your JetBlue flights on jetblue.com. Select seats, add extras, check in and more.",
+  },
+};
 
 export default function CheckInPage() {
   return (
