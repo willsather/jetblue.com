@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         hostname: "jetblue.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "assets.airtrfx.com",
+        pathname: "/**",
+      },
     ],
   },
 };

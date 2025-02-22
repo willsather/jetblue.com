@@ -22,19 +22,28 @@ export default function Header() {
           </div>
 
           <nav className="ml-8 hidden items-center gap-6 md:flex">
-            <div className="group relative">
-              <Button variant="ghost" className="gap-1">
-                Book
-              </Button>
-            </div>
-            <Button variant="ghost">Manage Trips</Button>
-            <Button variant="ghost">Check In</Button>
-            <div className="group relative">
-              <Button variant="ghost" className="gap-1">
-                Travel Info
-              </Button>
-            </div>
+            <Link
+              href="/flights"
+              className="gap-1 border-jb-navy border-b-4 font-bold hover:border-jb-orange"
+            >
+              Book
+            </Link>
+
+            <Link
+              href="/manage-trips"
+              className="gap-1 border-jb-navy border-b-4 font-bold hover:border-jb-orange"
+            >
+              Manage Trips
+            </Link>
+
+            <Link
+              href="/check-in"
+              className="gap-1 border-jb-navy border-b-4 font-bold hover:border-jb-orange"
+            >
+              Check In
+            </Link>
           </nav>
+
           <div className="ml-auto flex items-center gap-4">
             <Button variant="ghost" size="icon">
               <User className="size-12" />
