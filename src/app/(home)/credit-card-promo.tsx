@@ -1,13 +1,15 @@
-import { ArrowUpRight } from "lucide-react";
+import { track } from "@vercel/analytics/server";
 import Image from "next/image";
 
-import { Button } from "@/components/ui/button";
+import ApplyButton from "@/app/(home)/apply-button";
 import { creditCardPromoFlag } from "@/lib/flags";
 
 export default async function CreditCardPromo() {
   const creditCardPromotionEnabled = await creditCardPromoFlag();
 
   if (!creditCardPromotionEnabled) return null;
+
+  await track("Promotion Shown", {}, { flags: ["credit-card-promo-flag"] });
 
   return (
     <section className="container mx-auto px-4 py-12">
@@ -19,9 +21,12 @@ export default async function CreditCardPromo() {
           <p className="text-gray-600">
             Earn 70,000 bonus TrueBlue points after qualifying account activity.
           </p>
-          <Button className="bg-jb-navy hover:bg-jb-navy/80">Apply now</Button>
+
+          <ApplyButton />
+
           <p className="text-gray-500 text-sm">Terms apply.</p>
         </div>
+
         <div className="overflow-hidden rounded-lg">
           <Image
             src="https://jetblue.com/magnoliapublic/dam/ui-assets/promos/Barclays-LTO-70K-New-Pink.jpg?width=1120"
