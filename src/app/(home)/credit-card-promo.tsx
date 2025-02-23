@@ -2,13 +2,8 @@ import { track } from "@vercel/analytics/server";
 import Image from "next/image";
 
 import ApplyButton from "@/app/(home)/apply-button";
-import { creditCardPromoFlag } from "@/lib/flags";
 
 export default async function CreditCardPromo() {
-  const creditCardPromotionEnabled = await creditCardPromoFlag();
-
-  if (!creditCardPromotionEnabled) return null;
-
   await track("Promotion Shown", {}, { flags: ["credit-card-promo-flag"] });
 
   return (

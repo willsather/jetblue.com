@@ -1,6 +1,6 @@
 import BookFlight from "@/components/book-flight";
 
-export default function BookHero() {
+export default function BookHero({ title }: { title: string }) {
   return (
     <div className="relative bg-jb-navy text-white">
       <div
@@ -15,7 +15,7 @@ export default function BookHero() {
 
       <div className="container relative mx-auto flex flex-col items-center gap-8 px-4 py-12">
         <h1 className="relative mb-12 text-center font-bold text-4xl text-white">
-          Celebrating 25 years, nonstop.
+          {title}
         </h1>
 
         <BookFlight />

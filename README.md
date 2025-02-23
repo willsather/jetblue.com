@@ -62,19 +62,21 @@ highlight Vercel's Platform features and cohesive integrations with Next.js
 * Analytics / Speed Insights
 * Integrated Feature Flags
 
-#### Open Source
-
-* Out of the box features
-* Integrated with Platform
-  * Controllable Cache 
-  * Performant Builds
-  * Zero Downtime (Skew Protection)
-
 #### Managed Infrastructure
 
 * Compute (Fluid - Serverless Servers)
 * Cache (and revalidation APIs)
 * Observability (cohesion w/ framework)
+
+#### Open Source
+
+* Out of the box features
+  * Most popular framework
+  * 
+* Integrated with Platform
+    * Controllable Cache
+    * Performant Builds
+    * Zero Downtime (Skew Protection)
 
 
 ### Follow-Up Resources
