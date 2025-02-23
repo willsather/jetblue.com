@@ -12,20 +12,26 @@ This Next.js application is a light demo of the JetBlue website built with the h
 Created entirely using the newest Next.js App Router, this statically generated application is built intending to
 highlight Vercel's Platform features and cohesive integrations with Next.js
 
-
-### Discovery / Due Diligence
+### Customer Discovery
 1. Given existing product / tech stack, what the catalyst for investigating other options?
-   * What has drawn you to Vercel?
-   * What has drawn you to Next.js?
+    * What has drawn you to Vercel?
+    * What has drawn you to Next.js?
 
-2. What does your deployment process look like?
+2. What long term goals do you have for your product / company?
+
+3. What's biggest pain points facing your engineering team?
+
+### Technical Discovery
+1. What does your deployment process look like?
     * CI/CD
       * Lower Environments
+    * Server Rendering
     * Infrastructure
       * Cache
       * Scaling
+      * Observability
 
-3. What does your development process look like?
+2. What does your development process look like?
    * Pull Requests?
    * Product / Design Feedback?
    * Integrations?
@@ -43,13 +49,37 @@ highlight Vercel's Platform features and cohesive integrations with Next.js
     * Vercel roots in automatic deployments
     * Saw need for performant web applications
     * Built abstraction from infrastructure
-  
-
 
 ### Vercel's Value
 
+#### Platform
+
+* Automated Deployments / Rollbacks
+* Preview Environments
+* Toolbar / Collaboration
+* Analytics / Speed Insights
+* Integrated Feature Flags
+
+#### Open Source
+
+* Out of the box features
+* Integrated with Platform
+  * Controllable Cache 
+  * Performant Builds
+  * Zero Downtime (Skew Protection)
+
+#### Managed Infrastructure
+
+* Compute (Fluid - Serverless Servers)
+* Cache (and revalidation APIs)
+* Observability (cohesion w/ framework)
 
 
+### Follow-Up Resources
+
+[Angular on Vercel](https://vercel.com/solutions/angular)
+
+[How to Deploy Angular on Vercel](https://vercel.com/guides/deploying-angular-with-vercel)
 
 ## Getting Started
 
