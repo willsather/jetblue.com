@@ -17,29 +17,31 @@ highlight Vercel's Platform features and cohesive integrations with Next.js
     * What has drawn you to Vercel?
     * What has drawn you to Next.js?
 
-2. What long term goals do you have for your product / company?
+2. What's biggest pain points facing your engineering team?
 
-3. What's biggest pain points facing your engineering team?
+3. What long term goals do you have for your product / company?
+
 
 ### Technical Discovery
-1. What does your deployment process look like?
-    * CI/CD
-      * Lower Environments
-    * Server Rendering
-    * Infrastructure
-      * Cache
-      * Scaling
-      * Observability
 
-2. What does your development process look like?
+1. What does your development process look like?
    * Pull Requests?
    * Product / Design Feedback?
-   * Integrations?
-     * Content Management
-     * Analytics?
-     * Internal APIs?
-     * Other Integrations?
+   * Angular Application
+     * Server Rendering
+     * Integrations?
+       * Content Management
+       * Analytics? (Quite a few integrations)
+       * Internal APIs?
+       * Other Integrations?
 
+2. What does your deployment process look like?
+    * CI/CD
+        * Lower Environments
+    * Infrastructure
+        * Cache
+        * Scaling
+        * Observability
 
 ### Vercel Introduction
 **Question**: How familiar are you currently with Next.js / Vercel?
