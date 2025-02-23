@@ -57,8 +57,8 @@ importers:
         specifier: ^19.0.0
         version: 19.0.0
       react-day-picker:
-        specifier: ^9.5.1
-        version: 9.5.1(react@19.0.0)
+        specifier: ^8.10.1
+        version: 8.10.1(date-fns@4.1.0)(react@19.0.0)
       react-dom:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
@@ -189,9 +189,6 @@ packages:
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [win32]
-
-  '@date-fns/tz@1.2.0':
-    resolution: {integrity: sha512-LBrd7MiJZ9McsOgxqWX7AaxrDjcFVjWH/tIKJd7pnR7McaslGYOP1QmmiBXdJH/H/yLCT+rcQ7FaPBUxRGUtrg==}
 
   '@edge-runtime/cookies@5.0.2':
     resolution: {integrity: sha512-Sd8LcWpZk/SWEeKGE8LT6gMm5MGfX/wm+GPnh1eBEtCpya3vYqn37wYknwAHw92ONoyyREl1hJwxV/Qx2DWNOg==}
@@ -1428,9 +1425,6 @@ packages:
     resolution: {integrity: sha512-ZYP5VBHshaDAiVZxjbRVcFJpc+4xGgT0bK3vzy1HLN8jTO975HEbuYzZJcHoQEY5K1a0z8YayJkyVETa08eNTg==}
     engines: {node: '>=18'}
 
-  date-fns-jalali@4.1.0-0:
-    resolution: {integrity: sha512-hTIP/z+t+qKwBDcmmsnmjWTduxCg+5KfdqWQvb2X/8C9+knYY6epN/pfxdDuyVlSVeFz0sM5eEfwIUQ70U4ckg==}
-
   date-fns@4.1.0:
     resolution: {integrity: sha512-Ukq0owbQXxa/U3EGtsdVBkR1w7KOQ5gIBqdH2hkvknzZPYvBxb/aa6E8L7tmjFtkwZBu3UXBbjIgPo/Ez4xaNg==}
 
@@ -2081,11 +2075,11 @@ packages:
     resolution: {integrity: sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==}
     engines: {node: '>= 0.6'}
 
-  react-day-picker@9.5.1:
-    resolution: {integrity: sha512-PxuK8inYLlYgM2zZUVBPsaBM5jI40suPeG+naKyx7kpyF032RRlEAUEjkpW9/poTASh/vyWAOVqjGuGw+47isw==}
-    engines: {node: '>=18'}
+  react-day-picker@8.10.1:
+    resolution: {integrity: sha512-TMx7fNbhLk15eqcMt+7Z7S2KF7mfTId/XJDjKE8f+IUcFn0l08/kI4FiYTL/0yuOLmEcbR4Fwe3GJf/NiiMnPA==}
     peerDependencies:
-      react: '>=16.8.0'
+      date-fns: ^2.28.0 || ^3.0.0
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
 
   react-dom@19.0.0:
     resolution: {integrity: sha512-4GV5sHFG0e/0AD4X+ySy6UJd3jVl1iNsNHdpad0qhABJ11twS3TTBnseqsKurKcsNqCEFeGL3uLpVChpIO3QfQ==}
@@ -2591,8 +2585,6 @@ snapshots:
 
   '@biomejs/cli-win32-x64@1.9.4':
     optional: true
-
-  '@date-fns/tz@1.2.0': {}
 
   '@edge-runtime/cookies@5.0.2': {}
 
@@ -3617,8 +3609,6 @@ snapshots:
       whatwg-mimetype: 4.0.0
       whatwg-url: 14.0.0
 
-  date-fns-jalali@4.1.0-0: {}
-
   date-fns@4.1.0: {}
 
   debug@4.3.5:
@@ -4245,11 +4235,9 @@ snapshots:
 
   range-parser@1.2.1: {}
 
-  react-day-picker@9.5.1(react@19.0.0):
+  react-day-picker@8.10.1(date-fns@4.1.0)(react@19.0.0):
     dependencies:
-      '@date-fns/tz': 1.2.0
       date-fns: 4.1.0
-      date-fns-jalali: 4.1.0-0
       react: 19.0.0
 
   react-dom@19.0.0(react@19.0.0):
