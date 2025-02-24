@@ -8,6 +8,14 @@ export const creditCardPromoFlag = flag<boolean>({
   },
 });
 
+export const travelServicesFlag = flag<boolean>({
+  key: "travel-services-flag",
+  description: "enable displaying new travel services section",
+  decide() {
+    return true;
+  },
+});
+
 export const heroTextFlag = flag<string>({
   key: "hero-text-flag",
   description: "change home page hero cta for booking flights",
@@ -25,4 +33,8 @@ export const heroTextFlag = flag<string>({
   },
 });
 
-export const homeFlags = [creditCardPromoFlag, heroTextFlag] as const;
+export const homeFlags = [
+  creditCardPromoFlag,
+  heroTextFlag,
+  travelServicesFlag,
+] as const;
