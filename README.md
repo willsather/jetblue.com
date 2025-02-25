@@ -8,32 +8,29 @@ how it could be relevant to their needs, and set the stage for further sales con
 
 ## Demo
 
-This Next.js application is a light demo of the JetBlue website built with the help of [V0](https://v0.dev). 
+This Next.js application is a light demo of the JetBlue website built with the help of [V0](https://v0.dev).
 Created entirely using the newest Next.js App Router, this statically generated application is built intending to
 highlight Vercel's Platform features and cohesive integrations with Next.js
 
 ### Customer Discovery
-1. Given existing product / tech stack, what the catalyst for investigating other options?
-    * What has drawn you to Vercel?
-    * What has drawn you to Next.js?
 
-2. What's biggest pain points facing your engineering team?
-
-3. What long term goals do you have for your product / company?
-
+1. Given existing product / tech stack, what the catalyst for this conversation today?
+2. What do you know already know about Next.js and Vercel?
+3. What's biggest pain points facing your engineering team?
+4. What long term goals do you have for your product / company?
 
 ### Technical Discovery
 
 1. What does your development process look like?
-   * Pull Requests?
-   * Product / Design Feedback?
-   * Angular Application
-     * Server Rendering
-     * Integrations?
-       * Content Management
-       * Analytics? (Quite a few integrations)
-       * Internal APIs?
-       * Other Integrations?
+    * Pull Requests?
+    * Product / Design Feedback?
+    * Angular Application
+        * Server Rendering
+        * Integrations?
+            * Content Management
+            * Analytics? (Quite a few integrations)
+            * Internal APIs?
+            * Other Integrations?
 
 2. What does your deployment process look like?
     * CI/CD
@@ -44,40 +41,52 @@ highlight Vercel's Platform features and cohesive integrations with Next.js
         * Observability
 
 ### Vercel Introduction
-**Question**: How familiar are you currently with Next.js / Vercel?
 
 * [Vercel.com](https://vercel.com/home)
-  * Three product verticals
-    * Vercel roots in automatic deployments
-    * Saw need for performant web applications
-    * Built abstraction from infrastructure
+    * Three product verticals
+        * Vercel roots in automatic deployments
+        * Saw need for performant web applications
+        * Built abstraction from infrastructure
 
-### Vercel's Value
+### Demo
 
-#### Platform
+#### Performance
+
+A fast website keeps users engaged, improves conversion rates, and boosts search rankings, directly impacting revenue.
+Slow load times frustrate users and lead to lost opportunities converting users.
+
+* Rendering Strategies
+* Cache (and revalidation APIs)
+* Integrated Speed Insights
+* Compute (Fluid - Serverless Servers)
+* Observability (framework cohesion)
+
+#### Developer Experience
+
+A smooth development process enables faster feature releases by reducing time spent on complex infrastructure and
+deployment challenges, allowing your team to focus on building valuable features that drive business growth.
 
 * Automated Deployments / Rollbacks
 * Preview Environments
 * Toolbar / Collaboration
-* Analytics / Speed Insights
 * Integrated Feature Flags
+* Analytics
 
-#### Managed Infrastructure
+#### Security
 
-* Compute (Fluid - Serverless Servers)
-* Cache (and revalidation APIs)
-* Observability (cohesion w/ framework)
+Protecting customer data and preventing cyber threats are essential for maintaining trust and avoiding costly breaches.
+A secure application minimizes business risks and ensures compliance with industry regulations.
 
-#### Open Source
+* Firewall (WAF)
+* DDos Mitigation
+* Challenge Mode
+* Server Actions
 
-* Out of the box features
-  * Most popular framework
-  * 
-* Integrated with Platform
-    * Controllable Cache
-    * Performant Builds
-    * Zero Downtime (Skew Protection)
+### Vercel's Value
 
+1. Performance
+2. Developer Experience
+3. Security
 
 ### Follow-Up Resources
 
