@@ -100,6 +100,12 @@ A secure application minimizes business risks and ensures compliance with indust
 2. Security
 3. Developer Experience
 
+### Final Questions
+
+1. What specific demo / presentation items felt relevant to dive deeper on?
+2. Vercel / Next.js present potential change, what initial concerns do you have?
+3. Any immediate questions I can address?
+
 ### Follow-Up Resources
 
 [Angular on Vercel](https://vercel.com/solutions/angular)
@@ -111,12 +117,14 @@ A secure application minimizes business risks and ensures compliance with indust
 [Built With (Tech Stack)](https://builtwith.com/jetblue.com)
 
 ## Current Website
-The existing [`jetblue.com`](https://www.jetblue.com) website, built using [Angular](https://angular.dev/) and deployed 
+
+The existing [`jetblue.com`](https://www.jetblue.com) website, built using [Angular](https://angular.dev/) and deployed
 on [Fastly.com](https://www.fastly.com/), currently looks like this:
 
 ![website.png](public/assets/website.png)
 
-However, after a bit of research, there exists some performance problems as demonstrated with Google's Pagespeed Insights
+However, after a bit of research, there exists some performance problems as demonstrated with Google's Pagespeed
+Insights
 page [here](https://pagespeed.web.dev/analysis/https-www-jetblue-com/u6lvzn034u?form_factor=mobile):
 
 ![vitals.png](public/assets/vitals.png)
