@@ -1,5 +1,7 @@
 # JetBlue
 
+![banner.png](public/assets/banner.png)
+
 ## Prompt
 
 You’ll be running a mock customer intro call, combining elements of Discovery and an introduction + demo of Vercel on a
@@ -14,31 +16,39 @@ highlight Vercel's Platform features and cohesive integrations with Next.js
 
 ### Customer Discovery
 
-1. Given existing product / tech stack, what the catalyst for this conversation today?
-2. What do you know already know about Next.js and Vercel?
-3. What's biggest pain points facing your engineering team?
-4. What long term goals do you have for your product / company?
+1. What do you know already know about Next.js and Vercel?
+2. Given existing tech stack (**Angular deployed on Fastly**):
+    * What's the catalyst for this conversation today?
+    * What's biggest pain points facing your engineering team?
+3. What long term goals do you have for your product / company?
 
 ### Technical Discovery
 
-1. What does your development process look like?
+1. How does your development team go from idea to production?
+
+   ###### Development
+    * Angular Framework
+    * Server Rendering?
+
+   ###### Integrations
+    * Content Management
+    * Feature Flags
+    * Analytics? (Quite a few integrations)
+    * Internal APIs?
+    * Other Integrations?
+
+   ###### Collaboration
     * Pull Requests?
     * Product / Design Feedback?
-    * Angular Application
-        * Server Rendering
-        * Integrations?
-            * Content Management
-            * Analytics? (Quite a few integrations)
-            * Internal APIs?
-            * Other Integrations?
 
-2. What does your deployment process look like?
-    * CI/CD
-        * Lower Environments
-    * Infrastructure
-        * Cache
-        * Scaling
-        * Observability
+   ###### Deployments
+    * Pull Requests?
+    * Product / Design Feedback?
+
+   ###### Infrastructure
+    * Cache
+    * Scaling
+    * Observability
 
 ### Vercel Introduction
 
@@ -78,15 +88,15 @@ Protecting customer data and preventing cyber threats are essential for maintain
 A secure application minimizes business risks and ensures compliance with industry regulations.
 
 * Firewall (WAF)
-* DDos Mitigation
 * Challenge Mode
+* DDos Mitigation
 * Server Actions
 
 ### Vercel's Value
 
 1. Performance
-2. Developer Experience
-3. Security
+2. Security
+3. Developer Experience
 
 ### Follow-Up Resources
 
@@ -94,9 +104,24 @@ A secure application minimizes business risks and ensures compliance with indust
 
 [How to Deploy Angular on Vercel](https://vercel.com/guides/deploying-angular-with-vercel)
 
-## Getting Started
+[Incremental Migration Guide](https://vercel.com/docs/incremental-migration/migration-guide)
 
-### Development mode
+[Built With (Tech Stack)](https://builtwith.com/jetblue.com)
+
+## Current Website
+The existing [`jetblue.com`](https://www.jetblue.com) website, built using [Angular](https://angular.dev/) and deployed 
+on [Fastly.com](https://www.fastly.com/), currently looks like this:
+
+![website.png](public/assets/website.png)
+
+However, after a bit of research, there exists some performance problems as demonstrated with Google's Pagespeed Insights
+page [here](https://pagespeed.web.dev/analysis/https-www-jetblue-com/u6lvzn034u?form_factor=mobile):
+
+![vitals.png](public/assets/vitals.png)
+
+## Development
+
+### Development Server
 
 ```bash
 pnpm install
@@ -107,7 +132,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### Production mode
+### Production Server
 
 ```bash
 pnpm install
@@ -117,7 +142,7 @@ pnpm run start
 
 Your app should be up and running on [http://localhost:3000](http://localhost:3000)!
 
-## Learn More
+## Framework
 
 To learn more about Next.js, take a look at the following resources:
 
