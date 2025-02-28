@@ -27,15 +27,17 @@ highlight Vercel's Platform features and cohesive integrations with Next.js
 1. How does your development team go from idea to production?
 
    ###### Development
-    * Angular Framework
+    * Angular / ASP.NET?
     * Server Rendering?
+    * Generative AI?
 
    ###### Integrations
-    * Content Management
-    * Feature Flags
-    * Analytics? (Quite a few integrations)
-    * Internal APIs?
-    * Other Integrations?
+    * Content Management (**Magnolia Headless CMS**)
+    * Analytics (**Omni, Gladly, Google Analytics**)
+    * Internal APIs (`JBRest`)
+    * Feature Flags?
+    * AI?
+    * Other?
 
    ###### Collaboration
     * Pull Requests?
@@ -48,7 +50,7 @@ highlight Vercel's Platform features and cohesive integrations with Next.js
    ###### Infrastructure
     * Cache
     * Scaling
-    * Observability
+    * Observability (**Sentry, App Dynamics**)
 
 ### Vercel Introduction
 
